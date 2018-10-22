@@ -1,7 +1,6 @@
 package com.example.android.news;
 
 import android.content.Context;
-import android.graphics.drawable.GradientDrawable;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,9 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class NewsAdapter extends ArrayAdapter {
 
@@ -45,8 +42,8 @@ public class NewsAdapter extends ArrayAdapter {
         type.setText(currentNews.getSection() + ": " + currentNews.getType());
 
         // get the date
-        TextView date = convertView.findViewById(R.id.datePublished);
-        date.setText(currentNews.getDatePublished());
+        TextView dateView = convertView.findViewById(R.id.datePublished);
+        dateView.setText(currentNews.getDatePublished());
 
         TextView authorView = convertView.findViewById(R.id.author);
         String author = currentNews.getAuthor();

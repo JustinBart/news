@@ -147,9 +147,12 @@ public class QueryUtils {
             // Create a JSONObject from the JSON response string
             JSONObject baseJsonResponse = new JSONObject(newsJson);
 
+            // get the response
+            JSONObject response = baseJsonResponse.getJSONObject("response");
+
             // Extract the JSONArray associated with the key called "results",
             // which represents a list of features (or newsStories).
-            JSONArray news = baseJsonResponse.getJSONArray("results");
+            JSONArray news = response.getJSONArray("results");
 
             // For each story in the news, create an {@link News} object
             for (int i = 0; i < news.length(); i++) {
