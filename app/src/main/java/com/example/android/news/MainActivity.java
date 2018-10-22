@@ -18,7 +18,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-//todo progress bar
 public class MainActivity extends AppCompatActivity
         implements LoaderCallbacks<List<News>> {
 
