@@ -2,4 +2,19 @@
     <string name="app_name">News</string>
     <string name="no_internet_connection">No internet connection</string>
     <string name="no_news">No news was found</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_order_by_newest">newest</string>
+    <string name="settings_order_by_newest_label">Newest</string>
+    <string name="settings_order_by_oldest">oldest</string>
+    <string name="settings_order_by_oldest_label">Oldest</string>
+    <string name="settings_title">News Settings</string>
+
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_newest</string>
+
+    <string name="settings_star_rating_label">Star Rating</string>
+    <string name="settings_star_rating_key" translatable="false">star_rating</string>
+    <string name="settings_star_rating_default" translatable="false">4</string>
+
 </resources>
